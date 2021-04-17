@@ -16,7 +16,11 @@ export function Profile({ showProfileData }: ProfileProps) {
         </Box>
       )}
 
-      <Avatar size="md" name="Lucas Marques" src="https://github.com/marqueslu.png" />
+      <Avatar
+        size="md"
+        name="Lucas Marques"
+        src="https://github.com/marqueslu.png"
+      />
     </Flex>
   )
 }

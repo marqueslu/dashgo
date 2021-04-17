@@ -22,7 +22,7 @@ export function SearchBox() {
         px="4"
         mr="4"
         placeholder="Buscar na plataforma"
-      _placeholder={{ color: 'gray.400' }}
+        _placeholder={{ color: 'gray.400' }}
       />
       <Icon as={RiSearchLine} fontSize="20" />
     </Flex>

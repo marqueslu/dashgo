@@ -13,6 +13,7 @@ export function Header() {
     base: false,
     lg: true
   })
+
   return (
     <Flex
       as="header"
@@ -24,21 +25,18 @@ export function Header() {
       paddingX="6"
       align="center"
     >
-      {
-        !isWideVersion && (
-          <IconButton
-            aria-label="Open Navigation"
-            icon={<Icon as={RiMenuLine} />}
-            fontSize="24"
-            variant="unstyled"
-            onClick={onOpen}
-            marginRight="2">
-
-          </IconButton>
-        )
-      }
+      {!isWideVersion && (
+        <IconButton
+          aria-label="Open Navigation"
+          icon={<Icon as={RiMenuLine} />}
+          fontSize="24"
+          variant="unstyled"
+          onClick={onOpen}
+          marginRight="2"
+        ></IconButton>
+      )}
       <Logo />
-      {isWideVersion && <SearchBox /> }
+      {isWideVersion && <SearchBox />}
       <Flex align="center" marginLeft="auto">
         <NotificationsNav />
         <Profile showProfileData={isWideVersion} />

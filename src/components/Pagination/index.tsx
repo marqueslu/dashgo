@@ -4,7 +4,7 @@ import { PaginationItem } from './PaginationItem'
 export function Pagination() {
   return (
     <Stack
-      direction={["column", "row"]}
+      direction={['column', 'row']}
       marginTop="8"
       justify="space-between"
       align="center"
@@ -15,13 +15,12 @@ export function Pagination() {
       </Box>
 
       <Stack direction="row" spacing="2">
-       <PaginationItem number={1} isCurrent />
-       <PaginationItem number={2} />
-       <PaginationItem number={3} />
-       <PaginationItem number={4} />
-       <PaginationItem number={5} />
-       <PaginationItem number={6} />
-
+        <PaginationItem number={1} isCurrent />
+        <PaginationItem number={2} />
+        <PaginationItem number={3} />
+        <PaginationItem number={4} />
+        <PaginationItem number={5} />
+        <PaginationItem number={6} />
       </Stack>
     </Stack>
   )

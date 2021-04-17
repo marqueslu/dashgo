@@ -6,7 +6,8 @@ import {
   DrawerContent,
   DrawerCloseButton,
   DrawerHeader,
-  DrawerBody} from '@chakra-ui/react'
+  DrawerBody
+} from '@chakra-ui/react'
 import { useSidebarDrawer } from '../../contexts/SidebarDrawerContext'
 import { SidebarNav } from './SidebarNav'
 
